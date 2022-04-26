@@ -8,10 +8,13 @@
         <entry key="..\:/Users/lisit/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.236" />
         <entry key="..\:/Users/lisit/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.236" />
         <entry key="..\:/Users/lisit/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_likes_24dp.xml" value="0.1895" />
+        <entry key="..\:/Users/lisit/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_options_24dp.xml" value="0.206" />
         <entry key="..\:/Users/lisit/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_share_24dp.xml" value="0.1895" />
         <entry key="..\:/Users/lisit/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_views_24dp.xml" value="0.1895" />
         <entry key="..\:/Users/lisit/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/lisit/AndroidStudioProjects/MyApplication/app/src/main/res/layout/post_list_item.xml" value="0.264" />
+        <entry key="..\:/Users/lisit/AndroidStudioProjects/MyApplication/app/src/main/res/layout/first_variant.xml" value="0.25" />
+        <entry key="..\:/Users/lisit/AndroidStudioProjects/MyApplication/app/src/main/res/layout/main_activity.xml" value="0.4" />
+        <entry key="..\:/Users/lisit/AndroidStudioProjects/MyApplication/app/src/main/res/layout/post_list_item.xml" value="0.1" />
         <entry key="..\:/Users/lisit/AndroidStudioProjects/MyApplication/app/src/main/res/xml/post_avatar_drawable.xml" value="0.24547101449275363" />
       </map>
     </option>
