@@ -2,46 +2,36 @@ package ru.netology.nmedia
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.activity.viewModels
 import androidx.annotation.DrawableRes
 import ru.netology.nmedia.databinding.MainActivityBinding
+import ru.netology.nmedia.viewModel.PostViewModel
 import java.math.RoundingMode
 import java.text.DecimalFormat
 
 
 class MainActivity : AppCompatActivity() {
+
+    private val viewModel by viewModels<PostViewModel>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
 
         val binding = MainActivityBinding.inflate(layoutInflater)
 
         setContentView(binding.root)
 
-        val post = Post(
-            id = 0L,
-            author = getString(R.string.author_name),
-            content = getString(R.string.text),
-            date = getString(R.string.date),
-            likes = 999,
-            shares = 19_999,
-            views = 1_999_999
-        )
-
-        binding.render(post)
-
-        binding.likes.setOnClickListener {
-            post.likedByMe = !post.likedByMe
-            binding.likes.setImageResource(getLikeIcon(post.likedByMe))
-            if (post.likedByMe) {
-                post.likes++
-            } else {
-                post.likes--
-            }
+        viewModel.data.observe(this) { post ->
             binding.render(post)
         }
 
+        binding.likes.setOnClickListener {
+            viewModel.onLikeClicked()
+        }
+
         binding.share.setOnClickListener {
-            post.shares++
-            binding.render(post)
+            viewModel.onShareClicked()
         }
     }
 
