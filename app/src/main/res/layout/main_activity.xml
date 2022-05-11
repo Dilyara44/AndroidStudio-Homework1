@@ -14,7 +14,7 @@
         android:contentDescription="@string/avatar_description"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/netology" />
+        android:src="@drawable/netology" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/authorName"
@@ -88,7 +88,7 @@
 
         android:layout_marginTop="@dimen/common_spacing"
         android:background="#00000000"
-        android:src="@drawable/ic_likes_24dp"
+        android:src="@drawable/ic_like_24dp"
         app:layout_constraintEnd_toStartOf="@id/countLikes"
         app:layout_constraintStart_toStartOf="@id/text"
         app:layout_constraintTop_toBottomOf="@id/finishBarrier" />
@@ -135,6 +135,7 @@
 
 
         android:layout_marginTop="@dimen/common_spacing"
+        android:layout_marginEnd="5dp"
         android:background="#00000000"
         android:src="@drawable/ic_views_24dp"
         app:layout_constraintEnd_toStartOf="@id/countViews"
@@ -146,6 +147,7 @@
         android:layout_height="wrap_content"
 
         android:layout_marginStart="5dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginTop="@dimen/common_spacing"
         app:layout_constraintEnd_toEndOf="@id/text"
         app:layout_constraintTop_toBottomOf="@id/text"
